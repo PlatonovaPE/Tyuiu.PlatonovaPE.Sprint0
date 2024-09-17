@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCD5B833-0CF5-49A5-BA5E-5DDA6CA37B04}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Tyuiu.PlatonovaPE.Sprint0.Task0.V0</RootNamespace>
-    <AssemblyName>Tyuiu.PlatonovaPE.Sprint0.Task0.V0</AssemblyName>
+    <ProjectGuid>{F49AE0E3-3200-481A-8DBA-70CE13EFFBF2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tyuiu.PlatonovaPE.Sprint0.Task2.V0.Libb</RootNamespace>
+    <AssemblyName>Tyuiu.PlatonovaPE.Sprint0.Task2.V0.Libb</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,17 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.PlatonovaPE.Sprint0.Task2.V0.Libb\Tyuiu.PlatonovaPE.Sprint0.Task2.V0.Libb.csproj">
-      <Project>{f49ae0e3-3200-481a-8dba-70ce13effbf2}</Project>
-      <Name>Tyuiu.PlatonovaPE.Sprint0.Task2.V0.Libb</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
